@@ -13,20 +13,28 @@ body{
     color:red;
     font-family:unset;
 }
+.container{
+    display: flex;
+    justify-content: center;
+}
 
 </style>
 <body>
     <!--NAVBAR tabella principale-->
-    <table align="center">
+    <div class="container">
 
-        <tr>
-            
-            <td> <img src="img/640px-Flag_of_Italy.svg-910x1155.png" style="width: 100px;"></td>
-            <td><h1 id="TITOLO" style="text-align: center;">NETSPACE OFFICIAL</h1></td>
-            <td> <img src="img/640px-Flag_of_Italy.svg-910x1155.png" style="width: 100px;"> </td>
-        </tr>
+        <div class="item" id="immagine_italia">
+            <img src="img/640px-Flag_of_Italy.svg-910x1155.png" width="100px">
+        </div>
+        <div class="item" id="titolo">
+        <h1 id="TITOLO">NETSPACE OFFICIAL</h1>
+        </div>
+        <div class="item" id="immagine_italia_2">
+            <img src="img/640px-Flag_of_Italy.svg-910x1155.png" width="100px">
+        </div>
 
-    </table>
+
+    </div>
  <!--NAVBAR tabella principale-->
 </body>
 
