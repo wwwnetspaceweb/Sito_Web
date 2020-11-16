@@ -37,6 +37,11 @@
                 }
                 
            }
+           .videotab,td{
+                border-top-width: 3px;border-top-style: solid white;
+                border-left-width: 3px;border-top-style: solid white  ;
+                
+            }
         </style>
             <!--Media queries completi-->
         <body>
@@ -73,13 +78,106 @@
         
             </table >
 
-            <button  style="border-radius: 30%;">CIAO</button>
+            
 
-            <a href='https://ilcorsaronero.pro/tor/166527/Greenland_2020_iTALiAN_WEBDL_XviD_REV' target='_blank' title='Condividi Torrent'><img src='https://s.ilcorsaronero.pro/images/_down.png' border='0'/></a>
-
-
+                
 
 
+                <FORM STYLE="padding-left:550px;color: white;font-family: fantasy;font-size: 20px;">
+                    <INPUT TYPE="radio" NAME="RadioGroupName" ID="GroupName1" ONCLICK="ShowRadioButtonDiv('GroupName', 3)"/>Torrent caricati da noi<BR>
+                    <INPUT TYPE="radio" NAME="RadioGroupName" ID="GroupName2" ONCLICK="ShowRadioButtonDiv('GroupName', 3)"/>Ricerca Globale<BR>
+                    
+                    </FORM>
+                    
+<SCRIPT>
+    function ShowRadioButtonDiv (IdBaseName, NumberOfButtons) {
+        for (x=1;x<=NumberOfButtons;x++) {
+            CheckThisButton = IdBaseName + x;
+            ThisDiv = IdBaseName + x +'Div';
+        if (document.getElementById(CheckThisButton).checked) {
+            document.getElementById(ThisDiv).style.display = "block";
+            }
+        else {
+            document.getElementById(ThisDiv).style.display = "none";
+            }
+        }
+        return false;
+    }
+    </SCRIPT>
+
+    
+<DIV ID="GroupName1Div" STYLE="display:none;"><h1 style="color: white;" value="h1">
+
+    <div class="videotab">
+        <table border="1">
+        <th><h3 style="color:yellow">ＶＩＤＥＯ</h3></th>
+        <th><h3 style="color:yellow">ＤＥＳＣＲＩＺＩＯＮＥ</h3></th>
+        <th><h3 style="color:yellow">
+            ＤＡＴＡ</h3></th>
+        <th id="titolo_autore"><h3 style="color:yellow">ＡＵＴＯＲＥ</h3></th>
+        <!--kodi-->
+        <tr>
+        
+            <td><video width="300" height="300" controls>
+                <source src="img/Video_Compressi/2020-11-01-18-29-52.mp4.mp4"type="video/mp4">
+                    </video></td>
+        
+            <td >
+                <h3 style="color: white;text-align: center;">Come sincronizzare la libreria di kodi con altri dispositivi</h3>
+            </td>
+            <td>
+                <h3 style="color: white;"> 1/11/2020 </h3>
+            </td>
+            <td>
+                <h3 style="color: white;"> Davide </h3>
+            </td>
+        </tr>
+        <!--kodi-->
+        <!--ram-->
+        <tr>
+        
+            <td><video width="300" height="300" controls>
+                <source src="img/Video_Compressi/Memoria_Ram.mp4.mp4"type="video/mp4">
+                    </video></td>
+        
+            <td>
+                <h3 style="color: white;"> Come scegliere la memoria ram da aggiungere per migliorare il computer </h3>
+            </td>
+            <td>
+                <h3 style="color: white;"> 12/11/2020 </h3>
+            </td>
+            <td>
+                <h3 style="color: white;"> Davide </h3>
+            </td>
+        </tr>
+        <!--ram-->
+        
+        
+        
+        
+        
+        </table>
+        <!--VIDEO CARICATI-->
+        </div>
+
+
+
+
+
+
+
+
+
+
+</DIV>
+<DIV ID="GroupName2Div" STYLE="display:none;"><h1 style="color: white;" value="h1">
+
+<iframe src="https://ilcorsaronero.pro/" width="1000px" height="1000px"></iframe>
+
+
+
+
+</DIV>
 
 
 
