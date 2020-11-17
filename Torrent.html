@@ -101,10 +101,7 @@
         
             </table >
 
-            
-
-                
-
+        
 
                 <FORM STYLE="padding-left:400px;color: white;font-family: fantasy;font-size: 20px;">
                     <div style="display:flex;justify-content:row;"align="center">
@@ -140,14 +137,31 @@
             ＤＡＴＡ</h3></th>
         <th id="titolo_autore"><h3 style="color:yellow">ＡＵＴＯＲＥ</h3></th>
         
-        <tr>
+        <tr align="center"> <!--GREENLAND-->
         
+
             <td align="center"><img src="https://imagizer.imageshack.com/img923/2115/5Ncg5B.png" width="300px" height="300px" > 
             </td>
         
             <td >
                 <h3 style="color: white;text-align: center;"><a href='https://ilcorsaronero.pro/tor/166527/Greenland_2020_iTALiAN_WEBDL_XviD_REV' target='_blank' title='Condividi Torrent'><img src='https://s.ilcorsaronero.pro/images/_down.png' border='0'/></a></h3>
                 <h3 style="color: white;text-align: center;"><a href='magnet:?xt=urn:btih:d2b35d2b24971c6f3f035e6479637bc744e796b0&dn=Greenland.2020.iTALiAN.WEBDL.XviD-REV&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce' target='_blank' title='Scarica Magnet'><img src='img/icon-magnet.png' border='0'/></a></h3>
+                
+
+
+
+
+<button   onclick="button1()">Guarda Ora!</button>
+<script>
+    function button1() {
+    var x = document.getElementById("VideoPlayer0");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    } 
+</script>
             </td>
             <td>
                 <h3 style="color: white;"> 16/11/2020 </h3>
@@ -157,14 +171,13 @@
             </td>
         </tr>
 
-        <tr>
-        
-            <td>
-                <div id="player" class="webtor" align="center" />
+        <tr >
+            <td id="VideoPlayer0" style="display:none;" >
+                <div id="player0" class="webtor" align="center" />
                 <script>
                     window.webtor = window.webtor || [];
                     window.webtor.push({
-                        id: 'player',
+                        id: 'player0',
                         magnet: 'magnet:?xt=urn:btih:d2b35d2b24971c6f3f035e6479637bc744e796b0&dn=Greenland.2020.iTALiAN.WEBDL.XviD-REV&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce',
                         on: function(e) {
                             if (e.name == window.webtor.TORRENT_FETCHED) {
@@ -199,24 +212,93 @@
                     });
                 </script> 
                 <script src="https://cdn.jsdelivr.net/npm/@webtor/player-sdk-js/dist/index.min.js" charset="utf-8"></script> 
-  
-            <td>
-                <h3 style="color: white;"> </h3>
+            </td>
+            
+        </tr> <!--GREENLAND-->
+        
+        
+
+
+        <tr align="center" > <!--BORAT2-->
+        
+            <td align="center"><img src="https://www.staynerd.com/wp-content/uploads/borat-2-trailer.jpg" width="300px" height="300px" > 
+            </td>
+        
+            <td >
+                <h3 style="color: white;text-align: center;"><a href='https://ilcorsaronero.pro/tor/166527/Greenland_2020_iTALiAN_WEBDL_XviD_REV' target='_blank' title='Condividi Torrent'><img src='https://s.ilcorsaronero.pro/images/_down.png' border='0'/></a></h3>
+
+                <h3 style="color: white;text-align: center;"><a href='magnet:?xt=urn:btih:d2b35d2b24971c6f3f035e6479637bc744e796b0&dn=Greenland.2020.iTALiAN.WEBDL.XviD-REV&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce' target='_blank' title='Scarica Magnet'><img src='img/icon-magnet.png' border='0'/></a></h3>
+                <button   onclick="button2()">Guarda Ora!</button>
+                <script>
+                    function button2() {
+                    var x = document.getElementById("VideoPlayer1");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                    } 
+                </script>
+                
             </td>
             <td>
-                <h3 style="color: white;">  </h3>
+                <h3 style="color: white;"> 17/11/2020 </h3>
             </td>
             <td>
                 <h3 style="color: white;"> Davide </h3>
             </td>
         </tr>
+
+        <tr >
+            <td id="VideoPlayer1" style="display:none;" >
+
+                <div id="player1" class="webtor" align="center" />
+                <script>
+                    window.webtor = window.webtor || [];
+                    window.webtor.push({
+                        id: 'player1',
+                        magnet: 'magnet:?xt=urn:btih:1be655d4f2f0ab1e19a542481380faa56960b508&dn=Borat.Seguito.Di.Film.Cinema.2020.iTALiAN.WEBRiP.XviD-PRiME%5BMT%5D&tr=https%3A%2F%2Fopentracker.xyz%3A443%2Fannounce',
+                        on: function(e) {
+                            if (e.name == window.webtor.TORRENT_FETCHED) {
+                                console.log('Torrent fetched!')
+                            }
+                            if (e.name == window.webtor.TORRENT_ERROR) {
+                                console.log('Torrent error!')
+                            }
+                        },
+                        poster: 'https://via.placeholder.com/150/0000FF/808080?Text=Sintel',
+                        subtitles: [
+                            {
+                                srclang: 'en',
+                                label: 'test',
+                                src: 'https://raw.githubusercontent.com/andreyvit/subtitle-tools/master/sample.srt',
+                            }
+                        ],
+                        lang: 'en',
+                        i18n: {
+                            en: {
+                                common: {
+                                    "loading torrent": "Magnetizing torrent-file...",
+                                },
+                                stat: {
+                                    "seeding": "Seeding",
+                                    "waiting": "Client initialization",
+                                    "waiting for peers": "Waiting for peers",
+                                    "from": "from",
+                                },
+                            },
+                        },
+                    });
+                </script> 
+                <script src="https://cdn.jsdelivr.net/npm/@webtor/player-sdk-js/dist/index.min.js" charset="utf-8"></script>
+
+            </td>
         
-        
-        
+            
+        </tr> <!--BORAT2-->
         
         
         </table>
-        <!--VIDEO CARICATI-->
         </div>
 
 
@@ -246,4 +328,4 @@
         </body>
 
 
-</html><!--<iframe src="https://ilcorsaronero.pro/" width="800px" height="800px" ></iframe>-->
+</html>
