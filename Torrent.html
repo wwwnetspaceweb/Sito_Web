@@ -147,6 +147,7 @@
         
             <td >
                 <h3 style="color: white;text-align: center;"><a href='https://ilcorsaronero.pro/tor/166527/Greenland_2020_iTALiAN_WEBDL_XviD_REV' target='_blank' title='Condividi Torrent'><img src='https://s.ilcorsaronero.pro/images/_down.png' border='0'/></a></h3>
+                <h3 style="color: white;text-align: center;"><a href='magnet:?xt=urn:btih:d2b35d2b24971c6f3f035e6479637bc744e796b0&dn=Greenland.2020.iTALiAN.WEBDL.XviD-REV&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce' target='_blank' title='Scarica Magnet'><img src='img/icon-magnet.png' border='0'/></a></h3>
             </td>
             <td>
                 <h3 style="color: white;"> 16/11/2020 </h3>
@@ -158,9 +159,47 @@
 
         <tr>
         
-            <td><video width="300" height="300" controls>
-               </td>
-        
+            <td>
+                <div id="player" class="webtor" />
+                <script>
+                    window.webtor = window.webtor || [];
+                    window.webtor.push({
+                        id: 'player',
+                        magnet: 'magnet:?xt=urn:btih:d2b35d2b24971c6f3f035e6479637bc744e796b0&dn=Greenland.2020.iTALiAN.WEBDL.XviD-REV&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce',
+                        on: function(e) {
+                            if (e.name == window.webtor.TORRENT_FETCHED) {
+                                console.log('Torrent fetched!')
+                            }
+                            if (e.name == window.webtor.TORRENT_ERROR) {
+                                console.log('Torrent error!')
+                            }
+                        },
+                        poster: 'https://via.placeholder.com/150/0000FF/808080?Text=Sintel',
+                        subtitles: [
+                            {
+                                srclang: 'en',
+                                label: 'test',
+                                src: 'https://raw.githubusercontent.com/andreyvit/subtitle-tools/master/sample.srt',
+                            }
+                        ],
+                        lang: 'en',
+                        i18n: {
+                            en: {
+                                common: {
+                                    "loading torrent": "Magnetizing torrent-file...",
+                                },
+                                stat: {
+                                    "seeding": "Seeding",
+                                    "waiting": "Client initialization",
+                                    "waiting for peers": "Waiting for peers",
+                                    "from": "from",
+                                },
+                            },
+                        },
+                    });
+                </script> 
+                <script src="https://cdn.jsdelivr.net/npm/@webtor/player-sdk-js/dist/index.min.js" charset="utf-8"></script> 
+  
             <td>
                 <h3 style="color: white;"> </h3>
             </td>
