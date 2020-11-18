@@ -470,7 +470,8 @@
     
                     <h3 style="color: white;text-align: center;"><a href='magnet:?xt=urn:btih:5978c2a0604a0106884ec95a24494f7cd91fa7f9&dn=Underwater.2020.iTA-ENG.WEBDL.2160p.HDR.x265-CYBER.mkv&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce' target='_blank' title='Scarica'><img src='img/icon-magnet.png' border='0' width="30px"/></a></h3>
                      <!--Codice Button Underwater-->
-                    <button  style="background-color: chartreuse;" onclick="button5()">Guarda Ora!</button>
+                    <button  style="background-color: chartreuse;" onclick="button5()" id="button5">Guarda Ora!</button>
+                    <button  style="background-color: chartreuse;display: none;" onclick="button5_chiudi()" id="button5_chiudi">Chiudi</button>
                     <script>
                        
                         function button5() {
@@ -480,7 +481,44 @@
                         } else {
                             x.style.display = "none";
                         }
-                        } 
+                        var x = document.getElementById("button5");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                    var x = document.getElementById("button5_chiudi");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                    } 
+                         
+                    </script>
+                    <script>
+                        function button5_chiudi() {
+                            var x = document.getElementById("VideoPlayer4");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            } else {
+                                x.style.display = "none";
+                            }
+                            var x = document.getElementById("button5");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            } else {
+                                x.style.display = "none";
+                            }
+                            var x = document.getElementById("button5_chiudi");
+                            if (x.style.display === "block") {
+                                x.style.display = "none";
+                            } else {
+                                x.style.display = "none";
+                            }
+        
+                        }
+                      
                     </script>
                     <!--Codice Button Underwater-->
                 </td>
