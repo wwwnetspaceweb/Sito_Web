@@ -79,6 +79,24 @@
   line-height: 20px;
   font-size: 15px;
 }
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 11px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 100%;
+}
+.
         </style>
             <!--Media queries completi-->
         <body>
@@ -115,33 +133,34 @@
         
             </table >
             <!--navbar-->
-            <script>
-                function myFunction() {
-  var input = document.getElementById("Search");
-  var filter = input.value.toLowerCase();
-  var nodes = document.getElementsByClassName('target');
+            <!--Script per ricerca film-->
+            <script> 
+                                function myFunction() {
+                var input = document.getElementById("Search");
+                var filter = input.value.toLowerCase();
+                var nodes = document.getElementsByClassName('target');
 
-  for (i = 0; i < nodes.length; i++) {
-    if (nodes[i].innerText.toLowerCase().includes(filter)) {
-      nodes[i].style.display = "block";
-    } else {
-      nodes[i].style.display = "none";
-    }
-  }
-}
+                for (i = 0; i < nodes.length; i++) {
+                    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+                    nodes[i].style.display = "block";
+                    } else {
+                    nodes[i].style.display = "none";
+                    }
+                }
+                }
             </script>
-            
+            <!--Script per ricerca film-->
             <h2 style="color: white;" align="center">ULTIMI FILM E SERIE TV AGGIUNTI</h2>
             <div class="container">
                 <div class="search">
-                    <input type="text" id="Search" onkeyup="myFunction()" placeholder="Cerca il film..." title="Cerca">
+                    <input type="text" id="Search" onkeyup="myFunction()" placeholder="Cerca il film..." title="Cerca" >
                 </div>
 	
             <div class="items">
                 
-                <div class="target" ><img src="https://pad.mymovies.it/filmclub/2019/07/094/locandina.jpg" width="100px"> <a href="https://supervideo.tv/n5nrtmvzx4es" ><h4 style="color: white;">GREENLAND</h4></a> </div>
-                <div class="target" ><img src="https://i0.wp.com/www.masedomani.com/wp-content/uploads/2020/10/Borat-Subsequent-Moviefilm-poster.jpg?resize=338%2C500&ssl=1" width="100px"> <a href="https://supervideo.tv/xyja6uexmsbn"> <h4 style="color: white;">BORAT 2</h4></a> </div>
-                <div class="target" ><img src="https://pad.mymovies.it/filmclub/2019/05/049/locandina.jpg" width="100px"><a href="https://streamtape.com/v/OJxZyPyBmBTZ8eL/movie.mp4"><h4 style="color: white;">UNDERWATER</h4></a></div>  
+                <div class="target" id="item" ><img src="https://pad.mymovies.it/filmclub/2019/07/094/locandina.jpg" width="100px"> <a href="https://supervideo.tv/n5nrtmvzx4es" ><h4 style="color: white;">GREENLAND</h4></a> </div>
+                <div class="target" id="item" ><img src="https://i0.wp.com/www.masedomani.com/wp-content/uploads/2020/10/Borat-Subsequent-Moviefilm-poster.jpg?resize=338%2C500&ssl=1" width="100px"> <a href="https://supervideo.tv/xyja6uexmsbn"> <h4 style="color: white;">BORAT 2</h4></a> </div>
+                <div class="target" id="item"><img src="https://pad.mymovies.it/filmclub/2019/05/049/locandina.jpg" width="100px"><a href="https://streamtape.com/v/OJxZyPyBmBTZ8eL/movie.mp4"><h4 style="color: white;">UNDERWATER</h4></a></div>  
                 <div class="target"><img src="https://images-na.ssl-images-amazon.com/images/I/81vteywKEKL._SL1441_.jpg" width="100px"><h4 style="color: white;"><a href="https://streamtape.com/v/AqlAov7wrASXlQa/movie.mp4"> <h4 style="color:white">HARRY POTTER E IL PRIGIONIERO DI AZKBAN</h4></a></div>
                 <div class="target"><img src="https://pad.mymovies.it/filmclub/2018/09/044/locandina.jpg" width="100px"><h4 style="color: white;"> <a href="https://streamtape.com/v/rgVOJxev4ZCbWg8/movie.mp4"><h4 style="color:white">IL DIRITTO DI OPPORSI</h4></a></div>
                 <div class="target"><img src="https://3.bp.blogspot.com/-Xv6NsWzyA1Q/VZPQmqleBxI/AAAAAAAADZA/r-I47xPCKF8/s1600/0_.jpg" width="100px"><a href="https://streamtape.com/v/JpMY4o9eVDfjkoV/Lo_squalo_%5Bm1080p%5D_%281975%29_%5BID3889%5D.mp4"><h4 style="color: white;">LO SQUALO</h4></a></div>  
