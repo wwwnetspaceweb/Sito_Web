@@ -65,13 +65,13 @@
                 border-left-width: 3px;border-top-style: solid white  ;
                 
             }
-            .flex-container {
+            .items {
   display: flex;
   flex-wrap: wrap;
  
 }
 
-.flex-container > div {
+.items > div {
 
   width: 100px;
   margin: 10px;
@@ -115,24 +115,43 @@
         
             </table >
             <!--navbar-->
-        
+            <script>
+                function myFunction() {
+  var input = document.getElementById("Search");
+  var filter = input.value.toLowerCase();
+  var nodes = document.getElementsByClassName('target');
+
+  for (i = 0; i < nodes.length; i++) {
+    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "block";
+    } else {
+      nodes[i].style.display = "none";
+    }
+  }
+}
+            </script>
             
             <h2 style="color: white;" align="center">ULTIMI FILM E SERIE TV AGGIUNTI</h2>
-
-            <div class="flex-container">
-                <div><img src="https://pad.mymovies.it/filmclub/2019/07/094/locandina.jpg" width="100px"> <h4 style="color: white;">GREENLAND</h4></div>
-                <div><img src="https://i0.wp.com/www.masedomani.com/wp-content/uploads/2020/10/Borat-Subsequent-Moviefilm-poster.jpg?resize=338%2C500&ssl=1" width="100px"> <h4 style="color: white;">BORAT 2</h4></div>
-                <div><img src="https://pad.mymovies.it/filmclub/2019/05/049/locandina.jpg" width="100px"><h4 style="color: white;">UNDERWATER</h4></div>  
-                <div><img src="https://images-na.ssl-images-amazon.com/images/I/81vteywKEKL._SL1441_.jpg" width="100px"><h4 style="color: white;">HARRY POTTER E IL PRIGIONIERO DI AZKBAN</h4></div>
-                <div><img src="https://pad.mymovies.it/filmclub/2018/09/044/locandina.jpg" width="100px"><h4 style="color: white;">IL DIRITTO DI OPPORSI</h4></div>
-                <div><img src="https://3.bp.blogspot.com/-Xv6NsWzyA1Q/VZPQmqleBxI/AAAAAAAADZA/r-I47xPCKF8/s1600/0_.jpg" width="100px"><h4 style="color: white;">LO SQUALO</h4></div>  
-                <div><img src="https://www.cinefacts.it/foto/h!Non_e___un_paese_per_vecchi_poster_locandina_cinefacts.jpg" width="100px"><h4 style="color: white;">NON É UN PAESE PER VECCHI</h4></div>
-                <div><img src="https://i0.wp.com/www.theastoundingroutineoftouring.com/wp-content/uploads/2018/06/poster.jpeg?fit=600%2C886"width="100px"><h4 style="color: white;">2001:ODISSEA NELLO SPAZIO</h4></div>
-                <div><img src="https://pad.mymovies.it/filmclub/2009/04/170/locandina.jpg" width="100px"><h4 style="color: white;">MOON</h4></div>
-                <div><img src="https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Twzone.jpg/260px-Twzone.jpg"width="150px"><h4 style="color: white;">AI CONFINI DELLA REALTA'</h4></div>
-                <div><img src="https://www.debaser.it/files/2013%2F39251.jpg" width="100px"><h4 style="color: white;">IL GRANDE LEBOWSKY</h4></div>
-                <div><img src="https://images-na.ssl-images-amazon.com/images/I/51akrPMMNOL._SY445_.jpg"width="100px"><h4 style="color: white;">IL PADRINO II</h4></div>
-                <div><img src="https://www.corriere.it/methode_image/2020/09/04/Spettacoli/Foto%20Spettacoli%20-%20Trattate/q-kakD-U32102830748584gF-593x443@Corriere-Web-Sezioni.jpg" width="100px"><h4 style="color: white;">IL PADRINO III</h4>/div>
+            <div class="container">
+                <div class="search">
+                    <input type="text" id="Search" onkeyup="myFunction()" placeholder="Cerca il film..." title="Cerca">
+                </div>
+	
+            <div class="items">
+                
+                <div class="target" ><img src="https://pad.mymovies.it/filmclub/2019/07/094/locandina.jpg" width="100px"> <a href="https://supervideo.tv/n5nrtmvzx4es" ><h4 style="color: white;">GREENLAND</h4></a> </div>
+                <div class="target" ><img src="https://i0.wp.com/www.masedomani.com/wp-content/uploads/2020/10/Borat-Subsequent-Moviefilm-poster.jpg?resize=338%2C500&ssl=1" width="100px"> <a href="https://supervideo.tv/xyja6uexmsbn"> <h4 style="color: white;">BORAT 2</h4></a> </div>
+                <div class="target" ><img src="https://pad.mymovies.it/filmclub/2019/05/049/locandina.jpg" width="100px"><a href="https://streamtape.com/v/OJxZyPyBmBTZ8eL/movie.mp4"><h4 style="color: white;">UNDERWATER</h4></a></div>  
+                <div class="target"><img src="https://images-na.ssl-images-amazon.com/images/I/81vteywKEKL._SL1441_.jpg" width="100px"><h4 style="color: white;"><a href="https://streamtape.com/v/AqlAov7wrASXlQa/movie.mp4"> <h4 style="color:white">HARRY POTTER E IL PRIGIONIERO DI AZKBAN</h4></a></div>
+                <div class="target"><img src="https://pad.mymovies.it/filmclub/2018/09/044/locandina.jpg" width="100px"><h4 style="color: white;"> <a href="https://streamtape.com/v/rgVOJxev4ZCbWg8/movie.mp4"><h4 style="color:white">IL DIRITTO DI OPPORSI</h4></a></div>
+                <div class="target"><img src="https://3.bp.blogspot.com/-Xv6NsWzyA1Q/VZPQmqleBxI/AAAAAAAADZA/r-I47xPCKF8/s1600/0_.jpg" width="100px"><a href="https://streamtape.com/v/JpMY4o9eVDfjkoV/Lo_squalo_%5Bm1080p%5D_%281975%29_%5BID3889%5D.mp4"><h4 style="color: white;">LO SQUALO</h4></a></div>  
+                <div class="target"><img src="https://www.cinefacts.it/foto/h!Non_e___un_paese_per_vecchi_poster_locandina_cinefacts.jpg" width="100px"><a href="https://streamtape.com/v/PwomY4KXWKT0vWR/Non_%C3%A8_un_paese_per_vecchi_%5Bm1080p%5D_%282007%29_%5BID4702%5D.mp4"><h4 style="color: white;">NON É UN PAESE PER VECCHI</h4></a></div>
+                <div class="target"><img src="https://i0.wp.com/www.theastoundingroutineoftouring.com/wp-content/uploads/2018/06/poster.jpeg?fit=600%2C886"width="100px"><a href="https://streamtape.com/v/pDPpQDQRgZiXla/movie.mp4"><h4 style="color: white;">2001:ODISSEA NELLO SPAZIO</h4></a></div>
+                <div class="target"><img src="https://pad.mymovies.it/filmclub/2009/04/170/locandina.jpg" width="100px"><a href="https://streamtape.com/v/Qa4YrM23qwI03Ay/Moon_%5Bm1080p%5D_%282009%29_%5BID10538%5D.mp4"><h4 style="color: white;">MOON</h4></a></div>
+                <div class="target"><img src="https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Twzone.jpg/260px-Twzone.jpg"width="150px"><a href="https://www.eurostreaming01.club/serietv/ai-confini-della-realta-the-twilight-zone-1959-1964-streaming/"><h4 style="color: white;">AI CONFINI DELLA REALTA'</h4></a></div>
+                <div class="target"><img src="https://www.debaser.it/files/2013%2F39251.jpg" width="100px"><a href="https://streamtape.com/v/rxz0Z4wQVvuYye/Il_grande_Lebowski_%5Bm1080p%5D_%281998%29_%5BID11343%5D.mp4"><h4 style="color: white;">IL GRANDE LEBOWSKY</h4></a></div>
+                <div class="target"><img src="https://images-na.ssl-images-amazon.com/images/I/51akrPMMNOL._SY445_.jpg"width="100px"><a href="https://streamtape.com/v/PZXeXxXK7gh006O/Il_padrino_-_Parte_II_%5Bm1080p%5D_%281974%29_%5BID1696%5D.mp4"><h4 style="color: white;">IL PADRINO II</h4></a></div>
+                <div class="target"><img src="https://www.corriere.it/methode_image/2020/09/04/Spettacoli/Foto%20Spettacoli%20-%20Trattate/q-kakD-U32102830748584gF-593x443@Corriere-Web-Sezioni.jpg" width="100px"><a href="https://streamtape.com/v/PZXeXxXK7gh006O/Il_padrino_-_Parte_II_%5Bm1080p%5D_%281974%29_%5BID1696%5D.mp4"><h4 style="color: white;">IL PADRINO III</h4></a></div>
               </div>
 
 
