@@ -65,6 +65,20 @@
                 border-left-width: 3px;border-top-style: solid white  ;
                 
             }
+            .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.flex-container > div {
+
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+}
         </style>
             <!--Media queries completi-->
         <body>
@@ -102,465 +116,32 @@
             </table >
             <!--navbar-->
         
-                <!--codice per i radio button-->
-                <FORM STYLE="padding-left:400px;color: white;font-family: fantasy;font-size: 20px;">
-                    <div style="display:flex;justify-content:row;"align="center">
-                    <INPUT TYPE="radio" NAME="RadioGroupName" ID="GroupName1" ONCLICK="ShowRadioButtonDiv('GroupName', 3)"/>Torrent caricati da noi<BR>
-                    <INPUT TYPE="radio" NAME="RadioGroupName" ID="GroupName2" ONCLICK="ShowRadioButtonDiv('GroupName', 3)"/>Ricerca Globale<BR>
-                    </div>
-                    </FORM>
-                    
-<SCRIPT>
-    function ShowRadioButtonDiv (IdBaseName, NumberOfButtons) {
-        for (x=1;x<=NumberOfButtons;x++) {
-            CheckThisButton = IdBaseName + x;
-            ThisDiv = IdBaseName + x +'Div';
-        if (document.getElementById(CheckThisButton).checked) {
-            document.getElementById(ThisDiv).style.display = "block";
-            }
-        else {
-            document.getElementById(ThisDiv).style.display = "none";
-            }
-        }
-        return false;
-    }
-    </SCRIPT>
-<!--codice per i radio button-->
-    
-<DIV ID="GroupName1Div" STYLE="display:none;"><h1 style="color: white;" value="h1">
-
-    <div class="videotab">
-        <table border="1" id="tabella_film" >
-        <th><h3 style="color:yellow;">ＴＩＴＯＬＯ</h3></th>
-        <th><h3 style="color:yellow">ＬＩＮＫ</h3></th>
-        <th><h3 style="color:yellow">
-            ＤＡＴＡ</h3></th>
-        <th id="titolo_autore"><h3 style="color:yellow">ＡＵＴＯＲＥ</h3></th>
-        
-
-            <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-        <tr align="center"> <!--GREENLAND-->
-            <td align="center"><img src="https://imagizer.imageshack.com/img923/2115/5Ncg5B.png" width="300px" height="300px" title="La minaccia di una cometa distruttrice si abbatte contro l'umanità e John Garrity (Gerard Butler), insieme all'ex moglie Allison (Morena Baccarin) e al giovane figlio Nathan (Roger Dale Floyd), compiranno un viaggio impossibile e pieno di insidie nel tentativo di mettersi in salvo." > 
-            </td>
-        
-            <td >
-                <h3 style="color: white;text-align: center;"><a href='magnet:?xt=urn:btih:d2b35d2b24971c6f3f035e6479637bc744e796b0&dn=Greenland.2020.iTALiAN.WEBDL.XviD-REV&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce' target='_blank' title='Scarica Magnet'><img src='img/icon-magnet.png' border='0' width="30px"/></a></h3>
-                
-                <!--codice per streaming_GreenLand-->
-                <button style="background-color: chartreuse;"   onclick="button1()" id="button1" >Guarda Ora!</button>
-                <button style="background-color: chartreuse;display: none;"   onclick="button1_chiudi()" id="button1_chiudi"  >Chiudi</button>
-                <script>
-                    function button1() {
-                    var x = document.getElementById("VideoPlayer0");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    var x = document.getElementById("button1");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    var x = document.getElementById("button1_chiudi");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    
-                    } 
-
-                </script>
-                <script>
-                function button1_chiudi() {
-                    var x = document.getElementById("VideoPlayer0");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    var x = document.getElementById("button1");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    var x = document.getElementById("button1_chiudi");
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "none";
-                    }
-
-                }
-              
-            </script>
-                    
-                </script>
-                <!--codice per streaming_GreenLand-->
-            </td>
-            <td>
-                <h3 style="color: white;"> 16/11/2020 </h3>
-            </td>
-            <td>
-                <h3 style="color: white;"> Davide </h3>
-            </td>
-        </tr>
-        <!--Codice Per Video Streaming GreenLand-->
-        <tr >
-            <td id="VideoPlayer0" style="display:none;" >
-               
-                <iframe src="https://supervideo.tv/e/ou9aluhsa9kd" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=852 height=360 allowfullscreen></iframe>            </td>
-            <!--Codice Per Video Streaming GreenLand-->
-        </tr> <!--GREENLAND-->
-        
-        
-        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-        <tr align="center" > <!--BORAT2-->
-        
-            <td align="center"><img src="https://www.staynerd.com/wp-content/uploads/borat-2-trailer.jpg" title="Ha un che di miracoloso l’arrivo, su Amazon Prime Video, della pellicola Borat: Seguito di Film, un film girato in piena pandemia, in segreto, con l’intento di arrivare agli spettatori prima delle elezioni presidenziali.
-
-                A distanza di 14 anni dal primo Borat – Studio culturale sull’America a beneficio della gloriosa nazione del Kazakistan Sacha Baron Cohen torna a indossare i panni del giornalista kazako Borat Sagdiyev.
-                
-                Sebbene in passato avesse detto che sarebbe stato difficile, per non dire impossibile, tornare dietro la maschera di Borat, l’attore ha costruito intorno a sé un nuovo racconto, pieno di idee bigotte e politicamente scorrette." width="300px" height="300px" > 
-            </td>
-        
-            <td >
-
-                <h3 style="color: white;text-align: center;"><a href='magnet:?xt=urn:btih:1be655d4f2f0ab1e19a542481380faa56960b508&dn=Borat.Seguito.Di.Film.Cinema.2020.iTALiAN.WEBRiP.XviD-PRiME%5BMT%5D&tr=https%3A%2F%2Fopentracker.xyz%3A443%2Fannounce' target='_blank' title='Scarica Magnet'><img src='img/icon-magnet.png' border='0' width="30px"/></a></h3>
-                 <!--Codice Button Borat 2-->
-                <button  style="background-color: chartreuse;" onclick="button2()" id="button2">Guarda Ora!</button>
-                <button  style="background-color: chartreuse;display: none;" onclick="button2()" id="button2_chiudi">Chiudi</button>
-                <script>
-                   
-                    function button2() {
-                    var x = document.getElementById("VideoPlayer1");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    var x = document.getElementById("button2");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    var x = document.getElementById("button2_chiudi");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    } 
-                </script>
-                <script>
-                    function button2_chiudi() {
-                        var x = document.getElementById("VideoPlayer1");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
-                        var x = document.getElementById("button2");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
-                        var x = document.getElementById("button2_chiudi");
-                        if (x.style.display === "block") {
-                            x.style.display = "none";
-                        } else {
-                            x.style.display = "none";
-                        }
-    
-                    }
-                  
-                </script>
-                <!--Codice Button Borat 2-->
-            </td>
-            <td>
-                <h3 style="color: white;"> 17/11/2020 </h3>
-            </td>
-            <td>
-                <h3 style="color: white;"> Davide </h3>
-            </td>
-        </tr>
-        <!--Codice per Streaming Borat 2-->
-        <tr >
-            <td id="VideoPlayer1" style="display:none;"  >
-
-                <iframe src="https://supervideo.tv/e/mcslyrusspht" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=852 height=360 allowfullscreen></iframe>
-            </td>
             
-            <!--Codice per Streaming Borat 2-->
-        </tr> <!--BORAT2-->
+            <h2 style="color: white;" align="center">ULTIMI FILM E SERIE TV AGGIUNTI</h2>
 
-        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-        <tr align="center"> <!--Harry_Potter_Azkban-->
-
-            <td align="center"><img src="https://cineblog01.bid/uploads/thumb/320x480-0-60/2017-09/1505677182-harry-potter-e-il-prigioniero-di-azkaban.jpg" title="Harry Potter sta frequentando il terzo anno a Hogwarts e questa volta deve difendersi da un pericoloso assassino, Sirius Black, scappato dalla sorvegliata prigione per maghi di Azkaban e legato alla famiglia del piccolo mago." width="300px" height="300px" > 
-            </td>
-        
-            <td >
-                
-
-                <h3 style="color: white;text-align: center;"><a href='https://supervideo.tv/drssfiz03063' target='_blank' title='Scarica'><img src='img/Button_Download-01_25120.png' border='0' width="30px"/></a></h3>
-                 <!--Codice Button Harry_Potter_Azkban-->
-                <button  style="background-color: chartreuse;" onclick="button3()" id="button3">Guarda Ora!</button>
-                <button  style="background-color: chartreuse;display:none;" onclick="button3_chiudi()" id="button3_chiudi">Chiudi</button>
-                <script>
-                   
-                    function button3() {
-                    var x = document.getElementById("VideoPlayer2");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    var x = document.getElementById("button3");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    var x = document.getElementById("button3_chiudi");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    } 
-                     
-                </script>
-                 <script>
-                    function button3_chiudi() {
-                        var x = document.getElementById("VideoPlayer2");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
-                        var x = document.getElementById("button3");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
-                        var x = document.getElementById("button3_chiudi");
-                        if (x.style.display === "block") {
-                            x.style.display = "none";
-                        } else {
-                            x.style.display = "none";
-                        }
-    
-                    }
-                  
-                </script>
-                <!--Codice Button Harry_Potter_Azkban-->
-            </td>
-            <td>
-                <h3 style="color: white;"> 17/11/2020 </h3>
-            </td>
-            <td>
-                <h3 style="color: white;"> Davide </h3>
-            </td>
-        </tr>
-        <!--Codice per Streaming Harry_Potter_Azkban-->
-        <tr >
-            <td id="VideoPlayer2" style="display:none;"  >
-
-                <iframe src="https://supervideo.tv/e/drssfiz03063" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=852 height=360 allowfullscreen></iframe>
-
-            </td>
-            <!--Codice per Streaming Escape Room-->
-
-        </tr> <!--Escape Room-->
-        
-       
-        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-        <tr align="center"> <!--CasaBlanca-->
-
-            <td align="center"><img src="https://cineblog01.bid/uploads/thumb/320x480-0-60/2017-10/1508174214-casablanca.jpg" title="Casablanca, 1941: la città pullula di profughi che tentano di ottenere il visto per gli Stati Uniti d'America. Prima di venir catturato dalla polizia coloniale francese, Ugarte affida a Rick, proprietario del Café Américain, alcune lettere di transito in bianco sottratte a due tedeschi uccisi." width="300px" height="300px" > 
-            </td>
-        
-            <td >
-
-                <h3 style="color: white;text-align: center;"><a href='https://supervideo.tv/v8izdk4xgwpd' target='_blank' title='Scarica'><img src='img/Button_Download-01_25120.png' border='0' width="30px"/></a></h3>
-                 <!--Codice Button CasaBlanca-->
-                <button  style="background-color: chartreuse;" onclick="button4()" id="button4">Guarda Ora!</button>
-                <button  style="background-color: chartreuse;display: none;" onclick="button4_chiudi()" id="button4_chiudi">Chiudi</button>
-                <script>
-                   
-                    function button4() {
-                    var x = document.getElementById("VideoPlayer3");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    var x = document.getElementById("button4");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    var x = document.getElementById("button4_chiudi");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    } 
-                </script>
-                <script>
-                    function button4_chiudi() {
-                        var x = document.getElementById("VideoPlayer3");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
-                        var x = document.getElementById("button4");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
-                        var x = document.getElementById("button4_chiudi");
-                        if (x.style.display === "block") {
-                            x.style.display = "none";
-                        } else {
-                            x.style.display = "none";
-                        }
-    
-                    }
-                  
-                </script>
-                <!--Codice Button CasaBlanca-->
-            </td>
-            <td>
-                <h3 style="color: white;"> 17/11/2020 </h3>
-            </td>
-            <td>
-                <h3 style="color: white;"> Davide </h3>
-            </td>
-        </tr>
-        <!--Codice per Streaming CasaBlanca-->
-        <tr >
-            <td id="VideoPlayer3" style="display:none;"  >
-
-                <iframe src="https://supervideo.tv/e/v8izdk4xgwpd" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=852 height=360 allowfullscreen></iframe>
-            </td>
-            <!--Codice per Streaming CasaBlanca-->
-
-        </tr> <!--CasaBlanca-->
-        <tr> <!--Underwater-->
-            <tr align="center"> <!--Underwater-->
-
-                <td align="center"><img src="https://cineblog01.bid/uploads/thumb/320x480-0-60/2020-01/1579022254-underwater.jpg" title="Horror-thriller ad alta tensione, Underwater streaming è interpretato da Kristen Stewart e diretto da William Eubank, giovane regista alla sua prima esperienza con una major ma già piuttosto esperto con le opere di fantascienza. E anche stavolta Eubank è alle prese con una storia dallo sfondo fantascientifico ma - per variare un po' sul tema - non ci sono spazio, alieni, astronavi o altri cliché" width="300px" height="300px" > 
-                </td>
-            
-                <td >
-    
-                    <h3 style="color: white;text-align: center;"><a href='magnet:?xt=urn:btih:5978c2a0604a0106884ec95a24494f7cd91fa7f9&dn=Underwater.2020.iTA-ENG.WEBDL.2160p.HDR.x265-CYBER.mkv&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce' target='_blank' title='Scarica'><img src='img/icon-magnet.png' border='0' width="30px"/></a></h3>
-                     <!--Codice Button Underwater-->
-                    <button  style="background-color: chartreuse;" onclick="button5()" id="button5">Guarda Ora!</button>
-                    <button  style="background-color: chartreuse;display: none;" onclick="button5_chiudi()" id="button5_chiudi">Chiudi</button>
-                    <script>
-                       
-                        function button5() {
-                        var x = document.getElementById("VideoPlayer4");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
-                        var x = document.getElementById("button5");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    var x = document.getElementById("button5_chiudi");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }
-                    } 
-                         
-                    </script>
-                    <script>
-                        function button5_chiudi() {
-                            var x = document.getElementById("VideoPlayer4");
-                            if (x.style.display === "none") {
-                                x.style.display = "block";
-                            } else {
-                                x.style.display = "none";
-                            }
-                            var x = document.getElementById("button5");
-                            if (x.style.display === "none") {
-                                x.style.display = "block";
-                            } else {
-                                x.style.display = "none";
-                            }
-                            var x = document.getElementById("button5_chiudi");
-                            if (x.style.display === "block") {
-                                x.style.display = "none";
-                            } else {
-                                x.style.display = "none";
-                            }
-        
-                        }
-                      
-                    </script>
-                    <!--Codice Button Underwater-->
-                </td>
-                <td>
-                    <h3 style="color: white;"> 18/11/2020 </h3>
-                </td>
-                <td>
-                    <h3 style="color: white;"> Davide </h3>
-                </td>
-            </tr>
-            <!--Codice per Streaming Underwater-->
-            <tr >
-                <td id="VideoPlayer4" style="display:none;"  >
-    
-                    <iframe src="https://supervideo.tv/e/8awjjcnqzup8" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=842 height=360 allowfullscreen></iframe>                
-                </td>
+            <div class="flex-container">
+                <div><img src="https://pad.mymovies.it/filmclub/2019/07/094/locandina.jpg" width="100px"> <h4 style="color: white;">GREENLAND</h4></div>
+                <div><img src="https://i0.wp.com/www.masedomani.com/wp-content/uploads/2020/10/Borat-Subsequent-Moviefilm-poster.jpg?resize=338%2C500&ssl=1" width="100px"> <h4 style="color: white;">BORAT 2</h4></div>
+                <div><img src="https://pad.mymovies.it/filmclub/2019/05/049/locandina.jpg" width="100px"><h4 style="color: white;">UNDERWATER</h4></div>  
+                <div><img src="https://images-na.ssl-images-amazon.com/images/I/81vteywKEKL._SL1441_.jpg" width="100px"><h4 style="color: white;">HARRY POTTER E IL PRIGIONIERO DI AZKBAN</h4></div>
+                <div><img src="https://pad.mymovies.it/filmclub/2018/09/044/locandina.jpg" width="100px"><h4 style="color: white;">IL DIRITTO DI OPPORSI</h4></div>
+                <div><img src="https://3.bp.blogspot.com/-Xv6NsWzyA1Q/VZPQmqleBxI/AAAAAAAADZA/r-I47xPCKF8/s1600/0_.jpg" width="100px"><h4 style="color: white;">LO SQUALO</h4></div>  
+                <div><img src="https://www.cinefacts.it/foto/h!Non_e___un_paese_per_vecchi_poster_locandina_cinefacts.jpg" width="100px"><h4 style="color: white;">NON É UN PAESE PER VECCHI</h4></div>
+                <div><img src="https://i0.wp.com/www.theastoundingroutineoftouring.com/wp-content/uploads/2018/06/poster.jpeg?fit=600%2C886"width="100px"><h4 style="color: white;">2001:ODISSEA NELLO SPAZIO</h4></div>
+                <div><img src="https://pad.mymovies.it/filmclub/2009/04/170/locandina.jpg" width="100px"><h4 style="color: white;">MOON</h4></div>
+                <div><img src="https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Twzone.jpg/260px-Twzone.jpg"width="150px"><h4 style="color: white;">AI CONFINI DELLA REALTA'</h4></div>
+                <div><img src="https://www.debaser.it/files/2013%2F39251.jpg" width="100px"><h4 style="color: white;">IL GRANDE LEBOWSKY</h4></div>
+                <div><img src="https://images-na.ssl-images-amazon.com/images/I/51akrPMMNOL._SY445_.jpg"width="100px"><h4 style="color: white;">IL PADRINO II</h4></div>
+                <div><img src="https://www.corriere.it/methode_image/2020/09/04/Spettacoli/Foto%20Spettacoli%20-%20Trattate/q-kakD-U32102830748584gF-593x443@Corriere-Web-Sezioni.jpg" width="100px"><h4 style="color: white;">IL PADRINO III</h4>/div>
+              </div>
 
 
 
 
 
-        </tr><!--Underwater-->
 
 
 
-
-
-        </table>
-        </div>
-
-
-
-</DIV>
-<!--codice per pagina "Corsaro Nero"-->
-<DIV ID="GroupName2Div" STYLE="display:none;"><h1 style="color: white;" value="h1">
-
-<iframe src="https://ilcorsaronero.pro/" width="1000px" height="1000px" id="corsaro"></iframe>
-<!--codice per pagina "Corsaro Nero"-->
-
-
-
-</DIV>
 
 </body>
 
