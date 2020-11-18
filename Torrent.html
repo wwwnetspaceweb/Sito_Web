@@ -131,7 +131,7 @@
 
     <div class="videotab">
         <table border="1" id="tabella_film" >
-        <th><h3 style="color:yellow">ＴＩＴＯＬＯ</h3></th>
+        <th><h3 style="color:yellow;">ＴＩＴＯＬＯ</h3></th>
         <th><h3 style="color:yellow">ＬＩＮＫ</h3></th>
         <th><h3 style="color:yellow">
             ＤＡＴＡ</h3></th>
@@ -147,7 +147,8 @@
                 <h3 style="color: white;text-align: center;"><a href='magnet:?xt=urn:btih:d2b35d2b24971c6f3f035e6479637bc744e796b0&dn=Greenland.2020.iTALiAN.WEBDL.XviD-REV&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce' target='_blank' title='Scarica Magnet'><img src='img/icon-magnet.png' border='0' width="30px"/></a></h3>
                 
                 <!--codice per streaming_GreenLand-->
-                <button style="background-color: chartreuse;"   onclick="button1()">Guarda Ora!</button>
+                <button style="background-color: chartreuse;"   onclick="button1()" id="button1" >Guarda Ora!</button>
+                <button style="background-color: chartreuse;display: none;"   onclick="button1_chiudi()" id="button1_chiudi"  >Chiudi</button>
                 <script>
                     function button1() {
                     var x = document.getElementById("VideoPlayer0");
@@ -156,8 +157,47 @@
                     } else {
                         x.style.display = "none";
                     }
+                    var x = document.getElementById("button1");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                    var x = document.getElementById("button1_chiudi");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                    
                     } 
 
+                </script>
+                <script>
+                function button1_chiudi() {
+                    var x = document.getElementById("VideoPlayer0");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                    var x = document.getElementById("button1");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                    var x = document.getElementById("button1_chiudi");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "none";
+                    }
+
+                }
+              
+            </script>
+                    
                 </script>
                 <!--codice per streaming_GreenLand-->
             </td>
@@ -192,7 +232,8 @@
 
                 <h3 style="color: white;text-align: center;"><a href='magnet:?xt=urn:btih:1be655d4f2f0ab1e19a542481380faa56960b508&dn=Borat.Seguito.Di.Film.Cinema.2020.iTALiAN.WEBRiP.XviD-PRiME%5BMT%5D&tr=https%3A%2F%2Fopentracker.xyz%3A443%2Fannounce' target='_blank' title='Scarica Magnet'><img src='img/icon-magnet.png' border='0' width="30px"/></a></h3>
                  <!--Codice Button Borat 2-->
-                <button  style="background-color: chartreuse;" onclick="button2()">Guarda Ora!</button>
+                <button  style="background-color: chartreuse;" onclick="button2()" id="button2">Guarda Ora!</button>
+                <button  style="background-color: chartreuse;display: none;" onclick="button2()" id="button2_chiudi">Chiudi</button>
                 <script>
                    
                     function button2() {
@@ -202,7 +243,43 @@
                     } else {
                         x.style.display = "none";
                     }
+                    var x = document.getElementById("button2");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                    var x = document.getElementById("button2_chiudi");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
                     } 
+                </script>
+                <script>
+                    function button2_chiudi() {
+                        var x = document.getElementById("VideoPlayer1");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                        var x = document.getElementById("button2");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                        var x = document.getElementById("button2_chiudi");
+                        if (x.style.display === "block") {
+                            x.style.display = "none";
+                        } else {
+                            x.style.display = "none";
+                        }
+    
+                    }
+                  
                 </script>
                 <!--Codice Button Borat 2-->
             </td>
@@ -235,7 +312,8 @@
 
                 <h3 style="color: white;text-align: center;"><a href='https://supervideo.tv/drssfiz03063' target='_blank' title='Scarica'><img src='img/Button_Download-01_25120.png' border='0' width="30px"/></a></h3>
                  <!--Codice Button Harry_Potter_Azkban-->
-                <button  style="background-color: chartreuse;" onclick="button3()">Guarda Ora!</button>
+                <button  style="background-color: chartreuse;" onclick="button3()" id="button3">Guarda Ora!</button>
+                <button  style="background-color: chartreuse;display:none;" onclick="button3_chiudi()" id="button3_chiudi">Chiudi</button>
                 <script>
                    
                     function button3() {
@@ -245,7 +323,44 @@
                     } else {
                         x.style.display = "none";
                     }
+                    var x = document.getElementById("button3");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                    var x = document.getElementById("button3_chiudi");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
                     } 
+                     
+                </script>
+                 <script>
+                    function button3_chiudi() {
+                        var x = document.getElementById("VideoPlayer2");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                        var x = document.getElementById("button3");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                        var x = document.getElementById("button3_chiudi");
+                        if (x.style.display === "block") {
+                            x.style.display = "none";
+                        } else {
+                            x.style.display = "none";
+                        }
+    
+                    }
+                  
                 </script>
                 <!--Codice Button Harry_Potter_Azkban-->
             </td>
@@ -278,7 +393,8 @@
 
                 <h3 style="color: white;text-align: center;"><a href='https://supervideo.tv/v8izdk4xgwpd' target='_blank' title='Scarica'><img src='img/Button_Download-01_25120.png' border='0' width="30px"/></a></h3>
                  <!--Codice Button CasaBlanca-->
-                <button  style="background-color: chartreuse;" onclick="button4()">Guarda Ora!</button>
+                <button  style="background-color: chartreuse;" onclick="button4()" id="button4">Guarda Ora!</button>
+                <button  style="background-color: chartreuse;display: none;" onclick="button4_chiudi()" id="button4_chiudi">Chiudi</button>
                 <script>
                    
                     function button4() {
@@ -288,7 +404,43 @@
                     } else {
                         x.style.display = "none";
                     }
+                    var x = document.getElementById("button4");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                    var x = document.getElementById("button4_chiudi");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
                     } 
+                </script>
+                <script>
+                    function button4_chiudi() {
+                        var x = document.getElementById("VideoPlayer3");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                        var x = document.getElementById("button4");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                        var x = document.getElementById("button4_chiudi");
+                        if (x.style.display === "block") {
+                            x.style.display = "none";
+                        } else {
+                            x.style.display = "none";
+                        }
+    
+                    }
+                  
                 </script>
                 <!--Codice Button CasaBlanca-->
             </td>
