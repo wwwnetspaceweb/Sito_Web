@@ -9,7 +9,7 @@ body{
         
     }
     @media all and (min-width: 400px){ 
-        #tabella_navbar{
+        .container{
             width: 1160px;
             
         }
@@ -19,7 +19,7 @@ body{
        
     }
    @media all and (min-width: 1280px){
-    #tabella_navbar{
+    .container{
             width: 1264px;
             
         }
@@ -30,7 +30,7 @@ body{
    }
   
    @media all and (min-width: 1920px){
-    #tabella_navbar{
+    .container{
             width: 1920px;
             
         }
@@ -39,7 +39,7 @@ body{
         }
    }
    @media all and (min-width: 3840px){
-    #tabella_navbar{
+    .container{
             width: 3840px;
             
         }
@@ -48,3 +48,16 @@ body{
         }
         
    }
+   .container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row;
+   justify-content: space-around;
+    
+}
+
+.item{
+    margin-right:2rem;
+    
+}
