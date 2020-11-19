@@ -5,7 +5,7 @@ body{
     }
     
     @media all and (min-width: 400px){ 
-        .item{
+        .container{
             width: 1160px;
             
         }
@@ -15,7 +15,7 @@ body{
        
     }
    @media all and (min-width: 1280px){
-    .item{
+    .container{
             width: 1264px;
             
         }
@@ -26,7 +26,7 @@ body{
    }
   
    @media all and (min-width: 1920px){
-    .item{
+    .container{
             width: 1920px;
             
         }
@@ -36,7 +36,7 @@ body{
         }
    }
    @media all and (min-width: 3840px){
-    .item{
+    .container{
             width: 3840px;
             
         }
