@@ -79,7 +79,7 @@ body{
         }
    }
    
-
+   
    p{
     position: absolute;
     top: 50%;
@@ -124,9 +124,20 @@ body{
     width: 100%;
     max-width: 500px;
   }
+  
 
+.container{
 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row;
+    justify-content: space-around;
+}
 
+.item{
+    
+    margin-right: 1rem;
+}
 
 
 
