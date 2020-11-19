@@ -13,11 +13,11 @@ body{
     }
     
     @media all and (min-width: 400px){ 
-        #tabella_navbar{
+        .container{
             width: 1160px;
             
         }
-        #menu_principale{
+        .container{
             width: 1160px;
         }
         #ultime_notizie{
@@ -33,11 +33,11 @@ body{
         }
     }
    @media all and (min-width: 1280px){
-    #tabella_navbar{
+    .container{
             width: 1264px;
             
         }
-        #menu_principale{
+        .container{
             width: 1264px;
         }
         #ultime_notizie{
@@ -49,11 +49,11 @@ body{
    }
   
    @media all and (min-width: 1920px){
-    #tabella_navbar{
+    .container{
             width: 1920px;
             
         }
-        #menu_principale{
+        .container{
             width: 1920px;
         }
         #ultime_notizie{
@@ -64,11 +64,11 @@ body{
         }
    }
    @media all and (min-width: 3840px){
-    #tabella_navbar{
+    .container{
             width: 3840px;
             
         }
-        #menu_principale{
+        .container{
             width: 3840px;
         }
         #ultime_notizie{
