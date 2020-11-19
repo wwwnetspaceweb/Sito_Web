@@ -13,12 +13,12 @@ body{
     }
     
     @media all and (min-width: 400px){ 
-        .container{
+        .item{
             width: 1160px;
             
         }
-        .container{
-            width: 1160px;
+        .item{
+            width: 1160pz;
         }
         #ultime_notizie{
             width: 1160px;
@@ -33,11 +33,11 @@ body{
         }
     }
    @media all and (min-width: 1280px){
-    .container{
+    .item{
             width: 1264px;
             
         }
-        .container{
+        .item{
             width: 1264px;
         }
         #ultime_notizie{
@@ -49,11 +49,11 @@ body{
    }
   
    @media all and (min-width: 1920px){
-    .container{
+    .item{
             width: 1920px;
             
         }
-        .container{
+        .item{
             width: 1920px;
         }
         #ultime_notizie{
@@ -64,11 +64,11 @@ body{
         }
    }
    @media all and (min-width: 3840px){
-    .container{
+    .item{
             width: 3840px;
             
         }
-        .container{
+        .item{
             width: 3840px;
         }
         #ultime_notizie{
@@ -132,6 +132,7 @@ body{
     flex-direction: row;
     flex-wrap: row;
     justify-content: space-around;
+    
 }
 
 .item{
