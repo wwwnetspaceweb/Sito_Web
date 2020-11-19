@@ -3,6 +3,13 @@ body{
     background-image: url("img/abstract_science_fiction_space_galaxy_universe_stars_nebula_8000x5000.jpg");
     background-size:1920px , 1079px ;
     background-position: bottom; 
+   
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em
+    
     }
     
     @media all and (min-width: 400px){ 
@@ -71,13 +78,52 @@ body{
             width: 3840px;
         }
    }
-   .scritta_menu2:hover
-   {
-           
-    background:green;
-   }
+   
 
- 
+   p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  a::after{
+    content: "";
+    background: white;
+      mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+      transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  a:hover::after{
+      height: calc(100% + 8px)
+  }
+  
+  /* The End */
+  
+  .note{
+    top: auto;
+    bottom: 0;
+    color: #ddd;
+    font-size: 13px;
+    text-transform: none;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+  }
 
 
 
