@@ -52,7 +52,7 @@
                 }
             </script>
             <!--Script per ricerca film-->
-            <h2 style="color: white;" align="center">ULTIMI FILM E SERIE TV AGGIUNTI</h2>
+            <h2 style="color: white;" align="center" id="titolo_top">ARCHIVIO GLOBALE</h2>
             <div style="display: flex;flex-direction: row;">
                 <div>
                     <input type="text" id="Search" onkeyup="myFunction()" placeholder="Cerca il film..." title="Cerca" >
@@ -69,6 +69,13 @@
                         cambio_testo.innerHTML = "←";
                      } else {
                         cambio_testo.innerHTML = "Ultimi Film Usciti";
+
+                        }
+                        var cambio_testo = document.getElementById("titolo_top");
+                     if (cambio_testo.innerHTML === "ARCHIVIO GLOBALE") {
+                        cambio_testo.innerHTML = "FILM RECENTI";
+                     } else {
+                        cambio_testo.innerHTML = "ARCHIVIO GLOBALE";
 
                         }
                         var a = document.getElementById("Harry_Potter_Azkban"); 
