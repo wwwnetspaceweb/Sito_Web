@@ -13,7 +13,7 @@ var Moon = 'magnet:?xt=urn:btih:9B19A8B82AD14D27099211FACDC855746983C9D9&dn=Moon
 var Il_Grande_Lebowsky ='magnet:?xt=urn:btih:8f0c05b10eaddd6e204b2a5ad9f1bb817163037a&dn=Il+grande+Lebowski+-+Remastered+4K+%281998+ITA%2FENG%29+%5B1080p%5D+%5BHollywoodMovie%5D&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce'
 var Padrino_Trilogia = 'magnet:?xt=urn:btih:6FF345C4FF51A6C38350DB09D5485FA110C1425C&dn=Il+Padrino+-+The+Godfather+Trilogia+1080p+H265+AC3+5.1+ITA.ENG+multisub+%281972-1990%29+Sp33dy94+MIRCrew&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.eddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Fshadowshq.yi.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fshadowshq.eddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Finferno.demonoid.pw%3A3391%2Fannounce&tr=udp%3A%2F%2Feddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2730%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2780%2Fannounce&tr=udp%3A%2F%2F62.138.0.158%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce'
 var Escape_Room= 'magnet:?xt=urn:btih:4E3DCE58DC00DBF673EB2D4058C9EA2E9BBAF299&dn=Escape+Room+AC3+5.1+ITA.ENG+1080p+H265+multisub+%282019%29+Sp33dy94+MIRCrew&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.eddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Fshadowshq.yi.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fshadowshq.eddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Feddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2730%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2780%2Fannounce&tr=udp%3A%2F%2F62.138.0.158%3A6969%2Fannounce&tr=udp%3A%2F%2F151.80.120.114%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce'
-
+var UnderWater= 'magnet:?xt=urn:btih:6E92AA54FDE02914EC21D3E4DD4C3E0A885E60B4&dn=Underwater+%282020%29+AC3+5.1+ITA.ENG+1080p+H265+sub+ita.eng+Sp33dy94+MIRCrew&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2730%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2780%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.eddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Fshadowshq.yi.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fshadowshq.eddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Finferno.demonoid.pw%3A3391%2Fannounce&tr=udp%3A%2F%2Feddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce'
 
 console.log('\x1b[33m%s\x1b[0m', '--------------------------------------------------------------------------------------')
 
@@ -164,5 +164,17 @@ webtorrentHealth(Borat2, function (err, data) {
       console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
     }
   })
-  
+  webtorrentHealth(UnderWater, function (err, data) {
+    if (err) return console.error(err)
+    console.log('\x1b[32m%s\x1b[0m','UnderWater----------------')
+    console.log('average number of seeders: ' + data.seeds)
+    console.log('average number of leechers: ' + data.peers)
+    console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
+    if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
+        console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
+    }
+    else{
+      console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
+    }
+  })
   console.log('\x1b[33m%s\x1b[0m', '--------------------------------------------------------------------------------------')
