@@ -2,7 +2,7 @@
 
 
 var webtorrentHealth = require('webtorrent-health')
-
+var Greenland = 'magnet:?xt=urn:btih:d2b35d2b24971c6f3f035e6479637bc744e796b0&dn=Greenland_2020_iTALiAN=udp://glotorrents.pw:6969/announce&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://torrent.gresille.org:80/announce&tr=udp://tracker.openbittorrent.com:80&tr=udp://tracker.coppersurfer.tk:6969&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://p4p.arenabg.ch:1337&tr=udp://tracker.internetwarriors.net:1337&tr=wss://tracker.openwebtorrent.com'
 var Borat2 = 'magnet:?xt=urn:btih:6C3F7E1BF7EE1A6457A1B14B0CDBD222F746BB11&dn=Borat+Subsequent+Moviefilm+%282020%29+%282160p+AMZN+WEBRip+x265+HEVC+10bit+AAC+5.1+Joy%29+%5BUTR%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.si%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce'
 var Harry_Potter= 'magnet:?xt=urn:btih:3E3B429E1FEB84ECDBC87C32EC9B71F4570E2753&dn=Harry+Potter+and+the+Prisoner+of+Azkaban+%282004%29+%282160p+BluRay+x265+HEVC+10bit+HDR+AAC+7.1+Tigole%29+%5BQxR%5D&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce'
 var Il_Diritto_Di_Opporsi= 'magnet:?xt=urn:btih:CD3558EF57E5F18FE3C1A5BBDD76BDAB8DA3BA88&dn=2001.A.Space.Odyssey.1968.Multi.mUHD.2160p.Bluray.x265.HDR.DTS..5.1-DTOne&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2740%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.vanitycore.co%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce'
@@ -17,6 +17,21 @@ var UnderWater= 'magnet:?xt=urn:btih:6E92AA54FDE02914EC21D3E4DD4C3E0A885E60B4&dn
 
 console.log('\x1b[33m%s\x1b[0m', '--------------------------------------------------------------------------------------')
 
+//Greenland
+webtorrentHealth(Greenland, function (err, data) {
+  if (err) return console.error(err)
+  console.log('\x1b[32m%s\x1b[0m',"GreenLand:----------------")
+  console.log('average number of seeders: ' + data.seeds)
+  console.log('average number of leechers: ' + data.peers)
+  console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
+  if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
+      console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
+  }
+  else{
+    console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
+  }
+})
+//Greenland
 //Borat2
 webtorrentHealth(Borat2, function (err, data) {
     if (err) return console.error(err)
