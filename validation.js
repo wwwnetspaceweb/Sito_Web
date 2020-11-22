@@ -17,6 +17,7 @@ var UnderWater= 'magnet:?xt=urn:btih:6E92AA54FDE02914EC21D3E4DD4C3E0A885E60B4&dn
 
 console.log('\x1b[33m%s\x1b[0m', '--------------------------------------------------------------------------------------')
 
+//Greenland
 webtorrentHealth(Greenland, function (err, data) {
   if (err) return console.error(err)
   console.log('\x1b[32m%s\x1b[0m',"GreenLand:----------------")
@@ -30,6 +31,8 @@ webtorrentHealth(Greenland, function (err, data) {
     console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
   }
 })
+//Greenland
+//Borat2
 webtorrentHealth(Borat2, function (err, data) {
     if (err) return console.error(err)
     console.log('\x1b[32m%s\x1b[0m','Borat2:----------------')
@@ -45,6 +48,8 @@ webtorrentHealth(Borat2, function (err, data) {
   }
     
   )
+//Borat2
+//Harry Potter
 
   webtorrentHealth(Harry_Potter, function (err, data) {
     if (err) return console.error(err)
@@ -60,6 +65,9 @@ webtorrentHealth(Borat2, function (err, data) {
     }
   }
   )
+  //Harry Potter
+    //Il diritto di opporsi
+
   webtorrentHealth(Il_Diritto_Di_Opporsi, function (err, data) {
     if (err) return console.error(err)
     console.log('\x1b[32m%s\x1b[0m','Il diritto di opporsi:----------------')
@@ -73,6 +81,9 @@ webtorrentHealth(Borat2, function (err, data) {
       console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
     }
   })
+      //Il diritto di opporsi
+    //Lo Squalo
+
   webtorrentHealth(Lo_Squalo, function (err, data) {
     if (err) return console.error(err)
     console.log('\x1b[32m%s\x1b[0m','Lo Squalo:----------------')
@@ -86,6 +97,9 @@ webtorrentHealth(Borat2, function (err, data) {
       console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
     }
   })
+      //Lo Squalo
+    //Non e un paese per vecchi
+
   webtorrentHealth(Non_e_un_paese_per_vecchi, function (err, data) {
     if (err) return console.error(err)
     console.log('\x1b[32m%s\x1b[0m','Non è un paese per vecchi:----------------')
@@ -99,6 +113,8 @@ webtorrentHealth(Borat2, function (err, data) {
       console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
     }
   })
+  //Non e un paese per vecchi
+  //2001 Odissea nello spazio
   webtorrentHealth(_Odissea_nello_spazio, function (err, data) {
     if (err) return console.error(err)
     console.log('\x1b[32m%s\x1b[0m','2001 Odissea nello Spazio:----------------')
@@ -112,7 +128,9 @@ webtorrentHealth(Borat2, function (err, data) {
       console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
     }
   })
-  webtorrentHealth(Moon, function (err, data) {
+    //2001 Odissea nello spazio
+//Moon
+webtorrentHealth(Moon, function (err, data) {
     if (err) return console.error(err)
     console.log('\x1b[32m%s\x1b[0m','Moon:----------------')
     console.log('average number of seeders: ' + data.seeds)
@@ -125,6 +143,9 @@ webtorrentHealth(Borat2, function (err, data) {
       console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
     }
   })
+  //Moon
+//Il grande lebowsky
+
   webtorrentHealth(Il_Grande_Lebowsky, function (err, data) {
     if (err) return console.error(err)
     console.log('\x1b[32m%s\x1b[0m','Il grande Lebowsky:----------------')
@@ -138,6 +159,9 @@ webtorrentHealth(Borat2, function (err, data) {
       console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
     }
   })
+  //Il grande lebowsky
+//Il padrino trilogia
+
   webtorrentHealth(Padrino_Trilogia, function (err, data) {
     if (err) return console.error(err)
     console.log('\x1b[32m%s\x1b[0m','Il padrino Trilogia:----------------')
@@ -151,6 +175,8 @@ webtorrentHealth(Borat2, function (err, data) {
       console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
     }
   })
+  //Il padrino trilogia
+//Escape room
   webtorrentHealth(Escape_Room, function (err, data) {
     if (err) return console.error(err)
     console.log('\x1b[32m%s\x1b[0m','Escape Room:----------------')
@@ -164,6 +190,9 @@ webtorrentHealth(Borat2, function (err, data) {
       console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
     }
   })
+  //Escape room
+  //Underwater
+
   webtorrentHealth(UnderWater, function (err, data) {
     if (err) return console.error(err)
     console.log('\x1b[32m%s\x1b[0m','UnderWater----------------')
@@ -177,4 +206,6 @@ webtorrentHealth(Borat2, function (err, data) {
       console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
     }
   })
+    //Underwater
+
   console.log('\x1b[33m%s\x1b[0m', '--------------------------------------------------------------------------------------')
