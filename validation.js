@@ -1,5 +1,6 @@
 
-const { Console } = require('console');
+const { Console, clear } = require('console');
+const WebtorrentHealth = require('webtorrent-health');
 
 
 var webtorrentHealth = require('webtorrent-health')
@@ -16,13 +17,25 @@ var Escape_Room= 'magnet:?xt=urn:btih:4E3DCE58DC00DBF673EB2D4058C9EA2E9BBAF299&d
 var UnderWater= 'magnet:?xt=urn:btih:dc2fb6e5f34f9c5924b8381c84a2d389bb055dc2&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.eddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Fshadowshq.yi.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fshadowshq.eddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Feddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2730%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2780%2Fannounce&tr=udp%3A%2F%2F62.138.0.158%3A6969%2Fannounce&tr=udp%3A%2F%2F151.80.120.114%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce'
 
 
+var nomi_film_var =[Greenland,Borat2,Harry_Potter,Il_Diritto_Di_Opporsi,Lo_Squalo,Non_e_un_paese_per_vecchi,
+_Odissea_nello_spazio,Moon,Padrino_Trilogia,Escape_Room,UnderWater];
+var nomi_film_string =["Greenland","Borat2","Harry_Potter2","Il Diritto di Opporsi","Lo Squalo","Non è un paese per vecchi",
+"2001 Odissea nello spazio","Moon","Il Padrino Trilogia","Escape Room","Underwater"];
 
- 
+
 //Greenland
 
-webtorrentHealth(Greenland, function (err, data) {
+setInterval(script,5000);
+
+ function script(){
+var z=0;
+clear();
+  
+for(i=0;i<nomi_film_var.length;i++){
+webtorrentHealth(nomi_film_var[i], function (err, data,) {
   if (err) return console.error(err)
-  console.log('\x1b[32m%s\x1b[0m',"GreenLand:----------------")
+  console.log('\x1b[32m%s\x1b[0m',nomi_film_string[z])
+  z++;
   console.log('average number of seeders: ' + data.seeds)
   console.log('average number of leechers: ' + data.peers)
   console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
@@ -34,171 +47,10 @@ webtorrentHealth(Greenland, function (err, data) {
     console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
    
   }
+  
 })
 
-//Greenland
-//Borat2
-webtorrentHealth(Borat2, function (err, data) {
-    if (err) return console.error(err)
-    console.log('\x1b[32m%s\x1b[0m','Borat2:----------------')
-    console.log('average number of seeders: ' + data.seeds)
-    console.log('average number of leechers: ' + data.peers)
-    console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
-    if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
-        console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
-    }
-    else{
-      console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
-    }
-  }
-    
-  )
-//Borat2
-//Harry Potter
-
-  webtorrentHealth(Harry_Potter, function (err, data) {
-    if (err) return console.error(err)
-    console.log('\x1b[32m%s\x1b[0m','Harry Potter e il prigioniero di Azkban:----------------')
-    console.log('average number of seeders: ' + data.seeds)
-    console.log('average number of leechers: ' + data.peers)
-    console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
-    if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
-        console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
-    }
-    else{
-      console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
-    }
-  }
-  )
-  //Harry Potter
-    //Il diritto di opporsi
-
-  webtorrentHealth(Il_Diritto_Di_Opporsi, function (err, data) {
-    if (err) return console.error(err)
-    console.log('\x1b[32m%s\x1b[0m','Il diritto di opporsi:----------------')
-    console.log('average number of seeders: ' + data.seeds)
-    console.log('average number of leechers: ' + data.peers)
-    console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
-    if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
-        console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
-    }
-    else{
-      console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
-    }
-  })
-      //Il diritto di opporsi
-    //Lo Squalo
-
-  webtorrentHealth(Lo_Squalo, function (err, data) {
-    if (err) return console.error(err)
-    console.log('\x1b[32m%s\x1b[0m','Lo Squalo:----------------')
-    console.log('average number of seeders: ' + data.seeds)
-    console.log('average number of leechers: ' + data.peers)
-    console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
-    if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
-        console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
-    }
-    else{
-      console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
-    }
-  })
-      //Lo Squalo
-    //Non e un paese per vecchi
-
-  webtorrentHealth(Non_e_un_paese_per_vecchi, function (err, data) {
-    if (err) return console.error(err)
-    console.log('\x1b[32m%s\x1b[0m','Non è un paese per vecchi:----------------')
-    console.log('average number of seeders: ' + data.seeds)
-    console.log('average number of leechers: ' + data.peers)
-    console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
-    if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
-        console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
-    }
-    else{
-      console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
-    }
-  })
-  //Non e un paese per vecchi
-  //2001 Odissea nello spazio
-  webtorrentHealth(_Odissea_nello_spazio, function (err, data) {
-    if (err) return console.error(err)
-    console.log('\x1b[32m%s\x1b[0m','2001 Odissea nello Spazio:----------------')
-    console.log('average number of seeders: ' + data.seeds)
-    console.log('average number of leechers: ' + data.peers)
-    console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
-    if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
-        console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
-    }
-    else{
-      console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
-    }
-  })
-    //2001 Odissea nello spazio
-//Moon
-webtorrentHealth(Moon, function (err, data) {
-    if (err) return console.error(err)
-    console.log('\x1b[32m%s\x1b[0m','Moon:----------------')
-    console.log('average number of seeders: ' + data.seeds)
-    console.log('average number of leechers: ' + data.peers)
-    console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
-    if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
-        console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
-    }
-    else{
-      console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
-    }
-  })
-  //Moon
-//Il padrino trilogia
-
-  webtorrentHealth(Padrino_Trilogia, function (err, data) {
-    if (err) return console.error(err)
-    console.log('\x1b[32m%s\x1b[0m','Il padrino Trilogia:----------------')
-    console.log('average number of seeders: ' + data.seeds)
-    console.log('average number of leechers: ' + data.peers)
-    console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
-    if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
-        console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
-    }
-    else{
-      console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
-    }
-  })
-  //Il padrino trilogia
-//Escape room
-  webtorrentHealth(Escape_Room, function (err, data) {
-    if (err) return console.error(err)
-    console.log('\x1b[32m%s\x1b[0m','Escape Room:----------------')
-    console.log('average number of seeders: ' + data.seeds)
-    console.log('average number of leechers: ' + data.peers)
-    console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
-    if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
-        console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
-    }
-    else{
-      console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
-    }
-  })
-  //Escape room
-  //Underwater
-
-  webtorrentHealth(UnderWater, function (err, data) {
-    if (err) return console.error(err)
-    console.log('\x1b[32m%s\x1b[0m','UnderWater----------------')
-    console.log('average number of seeders: ' + data.seeds)
-    console.log('average number of leechers: ' + data.peers)
-    console.log('ratio: ', +(Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2'))
-    if ((Math.round((data.peers > 0 ? data.seeds / data.peers : data.seeds) +'e+2') + 'e-2')>0){
-        console.log('STATO='+'\x1b[32m%s\x1b[0m','OK!')
-    }
-    else{
-      console.log('STATO='+'\x1b[31m%s\x1b[0m','NOT WORKING!')
-    }
-  })
-    //Underwater
-    
-  console.log('\x1b[33m%s\x1b[0m', '--------------------------------------------------------------------------------------')
-  
+}
 
 
-
+ }
