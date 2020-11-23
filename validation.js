@@ -1,3 +1,5 @@
+const { Console } = require('console');
+
 
 
 
@@ -16,7 +18,9 @@ var UnderWater= 'magnet:?xt=urn:btih:dc2fb6e5f34f9c5924b8381c84a2d389bb055dc2&tr
 
 console.log('\x1b[33m%s\x1b[0m', '--------------------------------------------------------------------------------------')
 
+ 
 //Greenland
+
 webtorrentHealth(Greenland, function (err, data) {
   if (err) return console.error(err)
   console.log('\x1b[32m%s\x1b[0m',"GreenLand:----------------")
@@ -190,5 +194,5 @@ webtorrentHealth(Moon, function (err, data) {
     }
   })
     //Underwater
-
+   
   console.log('\x1b[33m%s\x1b[0m', '--------------------------------------------------------------------------------------')
