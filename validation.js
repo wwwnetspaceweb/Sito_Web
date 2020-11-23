@@ -30,7 +30,7 @@ setInterval(script,5000);
  function script(){
 var z=0;
 clear();
-  
+
 for(i=0;i<nomi_film_var.length;i++){
 webtorrentHealth(nomi_film_var[i], function (err, data,) {
   if (err) return console.error(err)
